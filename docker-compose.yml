@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  db:
+    image: couchbase
+    container_name: db
+    ports:
+      - "8091-8094:8091-8094"
+      - "11210:11210"
+    volumes:
+      - "/Users/couchbase:/opt/couchbase/var"
